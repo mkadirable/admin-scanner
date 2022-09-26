@@ -584,8 +584,8 @@ $listx = [
 foreach ($listx as $list) {
     $url = $aw . "/" . $list;
     $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_HEADER, true); // we want headers
-    curl_setopt($ch, CURLOPT_NOBODY, true); // we don't need body
+    curl_setopt($ch, CURLOPT_HEADER, true); 
+    curl_setopt($ch, CURLOPT_NOBODY, true); 
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_TIMEOUT, 10);
     $output = curl_exec($ch);
